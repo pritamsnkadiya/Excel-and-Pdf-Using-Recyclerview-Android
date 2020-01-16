@@ -159,4 +159,16 @@ public class ApiClient implements Serializable {
             callback.onFailure(call, e);
         }
     }
+
+    public void getAllArchitecture(Callback<ResponsModel> callback) {
+        Call<ResponsModel> call = null;
+        try {
+            ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
+            call = apiService.getAllArchitecture();
+            call.enqueue(callback);
+        } catch (Exception e) {
+            Log.e(TAG, e.toString(), e);
+            callback.onFailure(call, e);
+        }
+    }
 }

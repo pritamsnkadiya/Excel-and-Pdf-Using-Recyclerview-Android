@@ -15,5 +15,9 @@ public interface ApiInterface {
     @Headers("Content-Type: application/json")
     @GET("/v2/5e1d5274360000521dc73f3e")
     Call<ResponsModel> getAllList();
+
+    @Headers("Content-Type: application/json")
+    @GET("/v2/5e1ff4ac3000006700d1eacf")
+    Call<ResponsModel> getAllArchitecture();
     //----------------------------------------------------------------------------------------------------------------------------
 }

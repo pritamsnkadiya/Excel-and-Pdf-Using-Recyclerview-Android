@@ -8,4 +8,5 @@ public class ResponseResult implements Serializable {
     public String id;
     public String message;
     public List<UserList> userList;
+    public List<AidsList> aids;
 }
